@@ -10,4 +10,4 @@ function reverse(str) {
     return Array.from(str).reduce((acc, letter) => letter + acc, '');
 }
 
-module.exports = reverse;
+export default reverse;

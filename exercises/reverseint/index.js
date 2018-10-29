@@ -8,6 +8,8 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+function reverseInt(n) {
+    return n;
+}
 
-module.exports = reverseInt;
+export default reverseInt;
