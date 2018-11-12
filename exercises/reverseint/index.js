@@ -9,7 +9,13 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(n) {
-    return n;
+    var str = n.toString();
+    if (str.startsWith('-')) {
+        str = str.substring(1, str.length)
+            .split('').reverse().join('');
+        return Number('-' + str);
+    } else return Number(str
+        .split('').reverse().join(''));
 }
 
 export default reverseInt;
