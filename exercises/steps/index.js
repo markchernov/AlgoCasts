@@ -17,6 +17,16 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  for (let row = 0; row < n; row += 1) {
+    let str = '';
+    for (let col = 0; col < n; col += 1) {
+      if (col <= row) str += '#';
+      else str += ' ';
+    }
+    // eslint-disable-next-line no-console
+    console.log(str);
+  }
+}
 
 module.exports = steps;
