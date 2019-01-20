@@ -14,6 +14,17 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+  const mid = Math.floor((2 * n - 1) / 2);
+  for (let row = 0; row < n; row += 1) {
+    let str = '';
+    for (let col = 0; col < n * 2 - 1; col += 1) {
+      if (mid - row <= col && mid + row >= col) str += '#';
+      else str += ' ';
+    }
+    // eslint-disable-next-line no-console
+    console.log(str);
+  }
+}
 
 module.exports = pyramid;
