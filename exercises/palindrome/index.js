@@ -11,4 +11,4 @@ function palindrome(str) {
     return Array.from(str).reverse().join('') === str;
 }
 
-export default palindrome;
+module.exports = palindrome;

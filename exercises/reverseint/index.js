@@ -18,4 +18,4 @@ function reverseInt(n) {
         .split('').reverse().join(''));
 }
 
-export default reverseInt;
+module.exports = reverseInt;
